@@ -15,7 +15,7 @@ class Example extends React.Component {
         <ReactPannellum
           id="1"
           sceneId="firstScene"
-          imageSource="./panorama.jpg"
+          imageSource="https://cdn.outsource2india.com/featured-images/outsource-360-degree-panorama-photo-stitching-services.jpg"
           config={config}
         />
         <div onClick={this.click}>Click me</div>
