@@ -1,10 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import ReactDOM from 'react-dom';
+import { Pannellum } from 'react-pannellum';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-function ref() {
-  root.render(<App/>);
+function App() {
+  return (
+    <div>
+      <Pannellum
+        width="100%"
+        height="500px"
+        image=",/panorama.jpg"
+        pitch={10}
+        yaw={180}
+        hfov={110}
+        autoLoad
+      />
+    </div>
+  );
 }
 
-setInterval(ref, 1000);
+ReactDOM.render(<App />, document.getElementById('root'));
